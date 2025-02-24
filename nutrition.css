@@ -30,9 +30,19 @@
 .nutrition-calc-form th{
   width: 50%;
 }
+.tooltip-svg {
+  padding-right: 40px;
+}
 
 @media (max-width:768px) {
   .nutrition-calc-form {
     width: 100%;
+  }
+  .btn-responsive {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .gender-btn {
+    margin-top: 1rem;
   }
 }

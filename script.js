@@ -40,6 +40,10 @@ function calculateMacros(weight, unit = "lbs", goal = "maintenance", gender = "m
       calories: `${calories[0]} - ${calories[1]} kcal`
   };
 }
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 document.addEventListener("DOMContentLoaded", () => {
   // Sidebar JS
 const sidebar = document.querySelector('.sidebar')
