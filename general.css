@@ -1,0 +1,13 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+:root {
+  --primary-color: #2E5077;
+  --secondary-color: #3E7990;
+}
