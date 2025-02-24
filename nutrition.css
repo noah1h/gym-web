@@ -1,0 +1,38 @@
+#nutrition {
+  min-height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.nutrition-calc-form {
+  width: 50%;
+  border: 1px solid black;
+  min-height: 300px;
+}
+.nutrition-title {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.weight-dropdown {
+  border-radius: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 0.5px solid black;
+  border-left: none;
+}
+.weight-input {
+  border: 0.5px black solid;
+  border-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.nutrition-calc-form th{
+  width: 50%;
+}
+
+@media (max-width:768px) {
+  .nutrition-calc-form {
+    width: 100%;
+  }
+}
