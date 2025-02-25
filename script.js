@@ -40,6 +40,7 @@ function calculateMacros(weight, unit = "lbs", goal = "maintenance", gender = "m
       calories: `${calories[0]} - ${calories[1]} kcal`
   };
 }
+// Bootstrap tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -66,8 +67,32 @@ sideLinks.forEach(link => {
   });
   
 })
-})
+const elements = document.querySelectorAll(".hidden");
 
+        function revealElements() {
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.6) {
+                    el.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealElements);
+        revealElements();
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+              } else {
+                  entry.target.classList.remove("visible"); // Remove class when out of view
+              }
+          });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+})
+//Calculate macros
 $(document).ready(function() {
   document.querySelectorAll(".dropdown-item").forEach(item => {
     item.addEventListener("click", function() {

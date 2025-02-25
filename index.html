@@ -9,6 +9,9 @@
    <link
    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
    rel="stylesheet">
+
+   <!--font-family: 'Satoshi', sans-serif;-->
+   <link rel="stylesheet" href="satoshi.css">
    
    <!--Bootstrap-->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -21,6 +24,8 @@
    <link rel="stylesheet" href="general.css">
    <link rel="stylesheet" href="banner.css">
    <link rel="stylesheet" href="nutrition.css">
+   <link rel="stylesheet" href="faq.css">
+
 </head>
 <body>
   <div class="sidebar d-lg-none container">
@@ -33,15 +38,13 @@
     </button>
     <div class="sidebar-title col">GYM</div>
   </div>
-    <a href="#about" class="side-links">About</a>
-      <a href="#projects" class="side-links">Projects</a>
-      <a href="#services" class="side-links">Services</a>
+    <a href="#nutrition" class="side-links">Nutrition intake</a>
+      <a href="#projects" class="side-links">FAQ</a>
+      <a href="#services" class="side-links">Gym plans</a>
     
   </div>
   
-  <link rel="icon" type="image/png" sizes="32x32" href="web-icon/icon.webp">
-</head>
-<body>
+  
  <header id="header" class="d-flex justify-content-center align-items-center">
   <button class="sidebar-toggle-nav d-lg-none">
     <svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" style="width:40px;" >
@@ -59,25 +62,36 @@
     
     <div class="right-side">
       <a class="nav-links" href="#nutrition">Nutrition intake</a>
-      <a class="nav-links" href="">Gym apps</a>
-      <a class="nav-links" href="">Gym programs</a>
+      <a class="nav-links" href="">FAQ</a>
+      <a class="nav-links" href="">Gym plans</a>
     </div>
   </div>
   </nav>
   <div class="banner-title">Everything about fitness</div>
   
 </header>
+<svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
+  <path fill="black" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
+
+
+
 <section id="nutrition">
+  
   <div class="container d-flex justify-content-center">
- <div class="nutrition-calc-form">
+ <div class="nutrition-calc-form hidden">
+  
+  
 
   <div class="nutrition-title-container d-flex position-relative justify-content-center align-items-center">
   <div class="nutrition-title">Daily nutrition intake</div>
-  <div class="position-absolute end-0 tooltip-svg" data-bs-toggle="tooltip" data-bs-placement="top" title="Determine your daily macros by dividing total calories into protein, carbs, and fats based on your fitness goals">
+    <!--<div class="tooltip-svg" data-bs-toggle="tooltip" data-bs-placement="top" title="Determine your daily macros by dividing total calories into protein, carbs, and fats based on your fitness goals">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
     </svg>
-  </div>
+  </div>-->
+  
+  
   
 </div>
 
@@ -180,6 +194,18 @@
   
   
 </section>
+
+<svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+  <path fill="black" fill-opacity="1" d="M0,20L48,15C96,10,192,0,288,5C384,10,480,30,576,35C672,40,768,30,864,20C960,10,1056,0,1152,5C1248,10,1344,30,1392,40L1440,50L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+</svg>
+
+<section id="faq">
+  <div class="faq-title">FAQ:</div>
+</section>
+
+<svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
+  <path fill="black" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

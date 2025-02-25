@@ -1,0 +1,11 @@
+#faq {
+  min-height: 500px;
+  background-color: black;
+  
+}
+.faq-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 40px;
+}

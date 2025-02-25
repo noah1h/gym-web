@@ -30,9 +30,23 @@
 .nutrition-calc-form th{
   width: 50%;
 }
-.tooltip-svg {
-  padding-right: 40px;
+.hidden {
+  opacity: 0; /* Keep visible but slightly moved */
+  transform: translateX(-50px); /* Start slightly to the left */
+  transition: all 0.6s ease-out;
 }
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
 
 @media (max-width:768px) {
   .nutrition-calc-form {
