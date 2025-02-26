@@ -130,7 +130,7 @@ nav {
 
 
 
-@media (max-width:768px) {
+@media(max-width: 1200px) {
   .banner-title {
     font-size: 50px;
   }
