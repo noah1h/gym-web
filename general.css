@@ -1,4 +1,5 @@
 @import url('satoshi.css');
+
 * {
   
   font-family: 'Satoshi', sans-serif;
@@ -9,11 +10,28 @@
 body, html, section, svg {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 a {
   color: unset;
   text-decoration: none;
 }
+.hidden-up {
+  opacity: 0; /* Keep visible but slightly moved */
+  transform: translateY(50px); 
+  transition: all 0.6s ease-out;
+}
+.hidden-left {
+  opacity: 0; /* Keep visible but slightly moved */
+  transform: translateX(-50px); 
+  transition: all 0.6s ease-out;
+}
+.hidden-right {
+  opacity: 0; /* Keep visible but slightly moved */
+  transform: translateX(50px); 
+  transition: all 0.6s ease-out;
+}
+
 :root {
   --primary-color: black;
   --secondary-color: rgb(43, 43, 43);

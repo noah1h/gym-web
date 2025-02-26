@@ -67,7 +67,7 @@ sideLinks.forEach(link => {
   });
   
 })
-const elements = document.querySelectorAll(".hidden");
+const elements = document.querySelectorAll(".hidden-up, .hidden-left, .hidden-right");
 
         function revealElements() {
             elements.forEach(el => {
@@ -90,7 +90,7 @@ const elements = document.querySelectorAll(".hidden");
           });
       }, { threshold: 0.3 });
 
-      document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+      document.querySelectorAll(".hidden-up, .hidden-left, .hidden-right").forEach(el => observer.observe(el));
 })
 //Calculate macros
 $(document).ready(function() {
