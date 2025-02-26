@@ -130,6 +130,14 @@ nav {
 
 
 
+@media (max-width:768px) {
+  .banner-title {
+    font-size: 50px;
+  }
+  #header {
+    min-height: 600px;
+  }
+}
 @media (max-width:300px) {
   .banner-title {
     font-size: 20px;

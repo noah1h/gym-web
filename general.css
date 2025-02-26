@@ -4,6 +4,11 @@
   font-family: 'Satoshi', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body, html, section, svg {
+  margin: 0;
+  padding: 0;
 }
 a {
   color: unset;
@@ -13,3 +18,4 @@ a {
   --primary-color: black;
   --secondary-color: rgb(43, 43, 43);
 }
+
