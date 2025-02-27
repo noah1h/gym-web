@@ -25,9 +25,14 @@
    <link rel="stylesheet" href="css/banner.css">
    <link rel="stylesheet" href="css/nutrition.css">
    <link rel="stylesheet" href="css/faq.css">
+   <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
+  <div class="loading">
+    <div class="spinner-border" role="status">
+    </div>
+    </div>
   <div class="sidebar d-lg-none container">
       
     <div class="row">
@@ -39,7 +44,7 @@
     <div class="sidebar-title col">GYM</div>
   </div>
     <a href="#nutrition" class="side-links">Nutrition intake</a>
-      <a href="#projects" class="side-links">FAQ</a>
+      <a href="#faq" class="side-links">FAQ</a>
       <a href="#services" class="side-links">Gym plans</a>
     
   </div>
@@ -62,7 +67,7 @@
     
     <div class="right-side">
       <a class="nav-links" href="#nutrition">Nutrition intake</a>
-      <a class="nav-links" href="">FAQ</a>
+      <a class="nav-links" href="#faq">FAQ</a>
       <a class="nav-links" href="">Gym plans</a>
     </div>
   </div>
@@ -71,7 +76,7 @@
   
 </header>
 <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
-  <path fill="black" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  <path fill="var(--primary-color)" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg>
 
 
@@ -193,7 +198,7 @@
   
 </section>
 <svg style="transform: scaleY(-1); padding-top:-10px;" class="wave-svg d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
-  <path fill="black" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  <path fill="var(--primary-color)" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg>
 <section id="faq">
   <div class="faq-title hidden-left">FAQ:</div>
@@ -231,6 +236,24 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-6 col-md-12 q-a-container hidden-up">
+        <div class="bordered-text">Workouts</div>
+        <div class="row">
+          <div class="col-12">
+            <div class="faq-question"> How often should I go to the gym?</div>
+            <div class="faq-answer">The ideal gym frequency depends on your fitness goals, experience level, and recovery ability. For general health and fitness, 3-4 times per week is sufficient. If you're focusing on muscle building or athletic performance, 4-6 days per week may be necessary, with at least one rest day to allow muscles to recover. Beginners should start with 2-3 sessions per week and gradually increase as they become more comfortable. Rest and recovery are just as important as workouts to prevent burnout and injury.</div>
+          </div>
+          <div class="col-12 second-question">
+            <div class="faq-question">How long should a gym session last?</div>
+            <div class="faq-answer">Most effective gym workouts last between 45 minutes to 1.5 hours, depending on intensity and goals. A balanced session typically includes:</div>
+            <ul class="faq-answer">
+              <li>5-10 minutes of warm-up (dynamic stretching, light cardio) </li> <br>
+              <li>30-60 minutes of strength training and/or cardio</li> <br>
+              <li>5-10 minutes of cool-down (static stretching, breathing exercises)</li> <br>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     
   </div>
@@ -238,13 +261,45 @@
       <div class="col-md-12 col-lg-6"></div>
       <div class="col-md-12 col-lg-6"></div>
     </div>-->
-    </div>
   </div>
 </section>
-<svg class="wave-svg d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
-  <path fill="black" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+<svg class="wave-svg d-block" style="background-color:black;" xmlns="http://www.w3.org/2000/svg" viewBox="0 05 1400 100">
+  <path fill="var(--primary-color)" fill-opacity="1" d="M0,80L48,85C96,90,192,100,288,95C384,90,480,70,576,65C672,60,768,70,864,80C960,90,1056,100,1152,95C1248,90,1344,70,1392,60L1440,50L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg>
-
+</div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo - 12 columns on mobile, 4 columns on larger screens -->
+        <div class="col-12 col-md-4 pt-5">
+          <div class="footer-logo">GYM</div>
+        </div>
+    
+        <!-- Navigation - 6 columns on mobile, 4 columns on larger screens -->
+        <div class="col-6 col-md-4 p-responsive">
+          <div class="footer-link-title">Navigation</div>
+          <div class="footer-links">
+            <a class="footer-link" href="#nutrition">Nutrition intake</a>
+            <a class="footer-link" href="#faq">FAQ</a>
+            <a class="footer-link" href="">Gym plans</a>
+          </div>
+        </div>
+    
+        <!-- Sources - 6 columns on mobile, 4 columns on larger screens -->
+        <div class="col-6 col-md-4 p-responsive">
+          <div class="footer-link-title">Sources</div>
+          <div class="footer-links">
+            <a class="source-link" href="https://www.nasm.org/">National Academy of Sports Medicine (NASM)</a>
+            <a class="source-link" href="https://www.sportsnutritionsociety.org/">International Society of Sports Nutrition (ISSN)</a>
+            <a class="source-link" href="https://www.acsm.org/">American College of Sports Medicine (ACSM)</a>
+            <a class="source-link" href="https://jissn.biomedcentral.com">Journal of the International Society of Sports Nutrition (JISSN)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="copyright">&copy; 2024 Gym. All rights reserved.</p>
+  </footer>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--Jquery-->

@@ -40,6 +40,30 @@ function calculateMacros(weight, unit = "lbs", goal = "maintenance", gender = "m
       calories: `${calories[0]} - ${calories[1]} kcal`
   };
 }
+$(document).ready(() => {
+  $(".loading").css({
+    "display": "none"
+});
+})
+//footer
+function adjustBodyPadding() {
+  let footer = document.getElementById("footer");
+  let body = document.body;
+  
+  if (footer) {
+    let footerHeight = footer.offsetHeight; // Footer total height
+    let footerPadding = parseInt(getComputedStyle(footer).padding);
+
+    let totalFooterSpace = footerHeight + footerPadding;
+    
+    body.style.marginBottom = totalFooterSpace + "px";
+  }
+}
+
+// Run on page load and resize
+window.addEventListener("load", adjustBodyPadding);
+window.addEventListener("resize", adjustBodyPadding);
+
 // Bootstrap tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
