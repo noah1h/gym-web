@@ -4,8 +4,7 @@
   padding-bottom: 30px;
 }
 .nutrition-calc-form {
-  width: 50%;
-  border: 1px solid black;
+  width: 100%;
   min-height: 300px;
 }
 .nutrition-title {

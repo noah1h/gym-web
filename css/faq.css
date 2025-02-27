@@ -4,6 +4,8 @@
   padding-bottom: 30px;
   min-height: 500px;
   background-color: black;
+  
+  overflow-x: hidden;
 }
 .faq-title {
   color: white;
@@ -15,7 +17,7 @@
   font-weight: 600;
   color: white;
   font-size: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 .faq-answer {
@@ -25,12 +27,11 @@
 }
 
 .q-a-container {
-  position: relative; /* Required for absolute positioning */
-  border: 2px solid white; /* Add a border */
-  padding: 30px; /* Add some padding inside the container */
-  margin: 50px auto; /* Center the container */
-  width: 100%; /* Ensure the container takes full width */
-  max-width: 1200px; /* Optional: Set a max-width for better readability */
+  position: relative;
+  border: 2px solid white;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
 }
 
 .bordered-text {
@@ -41,12 +42,12 @@
   transform: translateX(-50%); /* Adjust for exact centering */
   background: black; /* Add a background to cover the border */
   padding: 0 10px; /* Add some padding around the text */
-  font-size: 30px; /* Set the font size */
+  font-size: 25px; /* Set the font size */
   color: white;
   font-weight: 600;
 }
 .second-question {
-  padding: 0;
+  padding-top: 3rem;
 }
 
 
@@ -60,9 +61,7 @@
   
 }
 @media(max-width:768px) {
-  .second-question {
-    padding-top: 3rem;
-  }
+  
 }
 @media (max-width:400px) {
   .bordered-text {
